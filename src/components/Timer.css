@@ -1,0 +1,28 @@
+a {
+	text-decoration: none;
+}
+form > input {
+	box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 1px;
+	margin: 5px 3px 10px 3px;
+	width: 50px;
+}
+
+input:first-of-type {
+	margin-left: 0;
+}
+.card {
+	width: 18rem;
+	font-size: 1.2rem;
+}
+
+.snt {
+	width: 25px;
+	font-size: small;
+}
+.timer {
+	font-family: "Poppins";
+	font-size: 1.5rem;
+}
+.working {
+	background-color: #34a33a7c;
+}

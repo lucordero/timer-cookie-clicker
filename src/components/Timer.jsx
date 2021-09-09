@@ -14,14 +14,10 @@ const Timer = () => {
 	const start = (e) => {
 		e.preventDefault();
 
+		setTime([hours, minutes, seconds]);
 		document.getElementById("card").classList.add("working");
 
-		setTime([hours, minutes, seconds]);
-		if (hrs !== 0 || mins !== 0 || secs !== 0) {
-			setWorking(true);
-			return;
-		}
-		alert("Debe ingresar valores correctos en cada campo.");
+		setWorking(true);
 	};
 	const tick = () => {
 		if (hrs === 0 && mins === 0 && secs === 0) reset();
@@ -55,6 +51,8 @@ const Timer = () => {
 	const handleTextUpdate = (current) => {
 		setNameTask(current);
 	};
+
+	//TODO: realizar validaciones de entrada, cambiar colo card cuando arranca y cuando finaliza, agregar boron 'OK' de confirmacion cuando finaliza y cambiar card a rojo cuando finaliza, agregar index a los "Name Task"
 
 	return (
 		<div>
